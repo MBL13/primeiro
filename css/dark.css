@@ -1,0 +1,180 @@
+.dark{
+	background-color: #c9c9c9;
+    background-image: linear-gradient(267deg, #000000f0, transparent), url(2.png);      
+    background-size: cover;
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+.dark p{
+    color: inherit;
+}
+.dark .cima{
+    border-radius: 41px;
+    background-color: #000000eb;
+    background-image: repeating-linear-gradient(0deg, #000000, transparent);
+    box-shadow: inset 0px -13px 13px -6px black;
+    background-size: 100% 4px;
+}
+.dark h1,.dark .alto h2{
+    color: #ffffff6b;
+    text-shadow: -2px 0px 3px #5affb2;
+    background: linear-gradient(45deg, darkseagreen, #97ffe3) text;
+}
+.dark .menu{
+    box-shadow: none;
+	background: #c3c3c357;
+    margin: 0 2%;
+    border-radius: 41px;
+    top: 0;
+}
+.dark .menu a{
+    color: white;
+    filter: none;
+}
+.dark .menu a:hover::after{
+    background: #e1e1e1;
+}
+.dark .ativo a{
+    color: white !important;
+}
+.dark .pesquisa {
+    box-shadow: inset 0px 5px 9px 0px #000000, inset 0 -5px 10px -2px #43434333;
+    background:#00000069;
+}
+.dark .pesquisa label{
+    color: #00ffef;
+}
+.dark .pesquisa input{
+    color: white;
+}
+.dark .carrossel{
+    backdrop-filter: none;
+    background: #c6c6c6ba;
+    background-image: url(../img/s1.png), url(../img/s2.png), url(../img/s3.png) !important;
+    animation: snow 10s linear infinite;
+    background-size: 400px;
+    box-shadow: 0px 5px 11px 0px rgb(0, 0, 0, 90%), 
+    inset 0px 0px 200px 40px #000000;
+}
+.dark .alto{
+    background-color: #000000c7;
+    background-blend-mode: normal;
+    text-shadow: 0px 5px 10px black;
+    box-shadow: 0px 5px 11px 0px rgb(0, 0, 0, 90%), inset 0px 0px 200px 80px #000000;
+    color: white;
+    backdrop-filter: blur(15px);
+}
+/*.dark #proximo{
+    background: #6a8a6a;
+}
+.dark #anterior{
+    background: #55543b;
+}*/
+.dark .imed{
+    color: #ffffff;
+    text-shadow: 0px 4px 4px #000000;
+    text-align: center;
+    margin: 30px auto -5px;
+}
+.dark hr {
+    width: 50%;
+    margin: 0 auto;
+    border: solid white 1px;
+}
+.dark .baixo{
+    background: none;
+/*    box-shadow: none;*/
+}
+.dark .elemento{
+    background: #0000006b;
+    backdrop-filter: blur(10px);
+    background-blend-mode: exclusion;
+    box-shadow: 
+        0px 5px 10px 2px #0000009e, 
+        inset 0 0 40px #0000004f;
+    color: #d6d6d6;
+    text-shadow: none;
+}
+.dark .elemento:hover{
+    z-index: 1;
+    background: #00ff7e;
+    box-shadow: 
+        0px 10px 15px -5px #000000, 
+        inset 0px 0px 100px 10px #0000007a;
+}
+.dark .elemento:hover img{
+    border-color: transparent;
+}
+.dark .elemento:hover .man, .dark .elemento:hover .woman{
+    background-color: #f7f7f7;
+}
+.dark .carrossel .carrossel, .dark .dentro .carrossel{
+    background: transparent;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+.dark details{
+    background: #ffffffa3;
+    box-shadow: inset 0px -20px 15px 0px #00000096;
+    backdrop-filter: blur(10px) saturate(1.9) invert(0);
+    color: #000000;
+}
+.dark details summary{
+    background: white;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.dark .man, .dark .woman{
+    filter: none !important;
+}
+.dark .icon:hover{
+    transition: 0.5s;
+}
+
+@media screen and (orientation:portrait){
+    .dark{
+        background-image: url(2.png);      
+    }
+    .dark .menu{
+        top: 5px;
+    }
+    .dark .alto {
+        background-color: black
+    }
+    .dark .baixo {
+        background:#0000009c;
+        backdrop-filter: blur(5px);
+        color: black;
+        background-blend-mode: color-dodge;
+    }
+    .dark .elemento{
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        color: white;
+    }
+    .dark .elemento:hover{
+        text-shadow: none;
+        background: transparent;
+        box-shadow: none;
+    }
+    .dark .elemento::after{
+        background: black;
+        box-shadow: 0px 2px 4px 1px #000000;
+    }
+    .dark .menu hr {
+        width: 30%;
+        margin: 0 auto;
+        border: inset #ffffff 1px;
+    }
+}

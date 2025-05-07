@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Me Time - Admin</title>
+	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/news.css">
+	<link rel="stylesheet" href="admin.css">
+	<link rel="stylesheet" href="../css/dark.css">
+	<link rel="icon" href="../a1.png">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.">
+ 	<script src="../script/jquery-2023.js"></script>
+ 	<script src="../script/roteiro.js"></script>
+</head>
+<body>
+
+	<header class="cima">
+		<div><a href="../index.html"><img class="logo" src="../a1.png"></a></div>
+		<h1 onclick="muda()">Admin ASTR0.&REG;</h1>
+		<div class="login"><a href="../login.html">Jay Luis</a></div>
+	</header>
+
+	<nav class="menu">
+		<div class="pesquisa">
+			<label for="pesquisa">pesquisa👓</label>
+			<input type="search" name="pesquisa" id="pesquisa">
+		</div>
+		<div class="icon sim" onclick="aparece()">
+			<a>menu</a>
+		</div>
+		<ul>
+			<li class="ativo"> <a href="#">Admin</a> </li>
+			<hr class="extra">
+			<li> <a class="extra" href="../login.html">Login</a> </li>
+		</ul>			
+	</nav>
+
+	<main class="meio">
+		<div class="carrossel alto">
+			<div>
+				<img src="../img/icons/man-user.svg">
+			</div>
+			<div>
+				<h1>Jay Luis</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<ul>
+					<li>Categoria: <b>Administrador</b></li>
+					<li>Data de  criação: <b>21/08/2024</b></li>
+				</ul>
+				
+				<nav class="bts">
+					<button id="anterior">Remover</button>
+					<button id="proximo">Notificar</button>
+				</nav>			
+				
+			</div>
+		</div>
+
+		<h1 class="imed">Perfis</h1>
+		<hr>
+
+		<div class="carrossel baixo">
+			<div class="elemento">
+				<a href="">
+					<i class="icon man"></i>
+					<div>
+						<h2>Jay Luis</h2>
+						<p>Designer, Web Developer, Software developer</p>
+					</div>
+				</a>
+				<button class="admin seguindo">Admin</button>
+			</div>
+
+			<div class="elemento">
+				<a href="">
+					<i class="icon man"></i>
+					<div>
+						<h2>Marcos Kapata</h2>
+						<p>Designer Gráfico</p>
+					</div>
+				</a>
+				<button class="admin">
+					<a href="#">remover</a>
+					<a href="#">Notficar</a>
+				</button>
+			</div>
+			
+			<div class="elemento">
+				<a href="">
+					<i class="icon woman"></i>
+					<div>
+						<h2>Jandira Mendes</h2>
+						<p>Web Developer</p>
+					</div>
+				</a>
+				<button class="admin">
+					<a href="#">remover</a>
+					<a href="#">Notficar</a>
+				</button>				
+			</div>
+
+			<div class="elemento">
+				<a href="">
+					<i class="icon woman"></i>
+					<div>
+						<h2>Maria Carla</h2>
+						<p>Designer, artista plástica</p>
+					</div>
+				</a>
+				<button class="admin">
+					<a href="#">remover</a>
+					<a href="#">Notficar</a>
+				</button>				
+			</div>
+
+			<div class="elemento">
+				<a href="">
+					<i class="icon man"></i>
+					<div>
+						<h2>João Ludgero</h2>
+						<p>UX Designer</p>
+					</div>
+				</a>
+				<button class="admin">
+					<a href="#">remover</a>
+					<a href="#">Notficar</a>
+				</button>			
+			</div>
+		
+			<div class="elemento">
+				<a href="">
+					<i class="icon man"></i>
+					<div>
+						<h2>Pedro de Oliveira</h2>
+						<p>Full Stack Developer</p>
+					</div>
+				</a>
+				<button class="admin">
+					<a href="#">remover</a>
+					<a href="#">Notficar</a>
+				</button>
+			</div>
+			<div class="elemento">
+				<a href="">
+					<i class="icon man"></i>
+					<div>
+						<h2>Divaldo Nilson</h2>
+						<p>UX Designer</p>
+					</div>
+				</a>
+				<button class="admin">
+					<a href="#">remover</a>
+					<a href="#">Notficar</a>
+				</button>
+			</div>
+
+			<div class="elemento">
+				<a href="">
+					<i class="icon woman"></i>
+					<div>
+						<h2>Kátia da Silva</h2>
+						<p>Fotógrafa</p>
+					</div>
+				</a>
+				<button class="admin">
+					<a href="#">remover</a>
+					<a href="#">Notficar</a>
+				</button>
+			</div>
+
+			
+			<div class="elemento">
+				<a href="">
+					<i class="icon woman"></i>
+					<div>
+						<h2>Rita Pinheiro</h2>
+						<p>Fotógrafa</p>
+					</div>
+				</a>
+				<button class="admin">
+					<a href="#">remover</a>
+					<a href="#">Notficar</a>
+				</button>
+			</div>
+
+		</div>
+	</main>
+
+	<footer>
+		<p><b>ASTR0.&REG;</b> - Todos os direitos reservados 2025&copy;</p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+.dark{
+    background-image: 
+        linear-gradient(360deg, #000000f0 25px, transparent 400px), 
+        url(2.png) !important;
+} 
+header{
+ 	color: black;
+    text-shadow: 0px 4px 4px white;
+	text-align: center;
+	margin: 30px auto 0;
+}
+.dark .sb {
+    background-color: #000000 !important;
+    box-shadow: 0px 5px 11px 0px rgb(0, 0, 0, 90%), inset 0px 0px 80px 40px #ffffff91 !important;
+}
+.dark .sb div{ color: white; }
+.dark .elemento:hover {
+    background: #78e9ac !important;
+    box-shadow: 0px 10px 15px -5px #000000, inset 0px 0px 100px 10px #0000007a !important;
+    text-shadow: 0 5px 10px #00000061;
+    color: white;
+}
+.carrossel{
+	margin: 0 2.5% 5px;
+}
+.elemento{
+    height: auto;
+}
+.elemento > a{
+    height: 167px;
+    display: flex;
+}
+.elemento:hover p{
+    text-indent: initial;
+}
+.elemento .man, .elemento .woman{
+    width: 120px;
+    height: 50%;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #78e9ac;
+    box-shadow: inset -20px 0px 20px 20px #00000030;
+}
+.elemento div{
+    width: 100%;
+}
+.elemento:hover {
+    cursor: default;
+    box-shadow: inset 0px 10px 15px -10px #000000b0, 0 4px 6px rgb(0, 0, 0, 20%);
+}
+.elemento:hover .man, .elemento:hover .woman{
+    background-color: #ffe7a6;
+}
+.seguir,.admin{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    padding: 5px;
+    border: none;
+    text-shadow: none;
+    font-weight: 900;
+    box-shadow: -5px -5px 10px 0 #00000038, inset 0px -15px 20px 0px #aeaeae78;
+    border-radius: 90px;
+    background: #ffffff;
+    color: black;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 2;
+}
+.seguir:active,.admin:active{
+    color: cadetblue;
+    box-shadow: inset 0px 20px 20px #d2d2d2 !important;
+    transition: 0s !important;
+}
+.elemento:hover .seguir,.elemento:hover .admin{
+    top: 79%;
+    right: 5px;
+    height: 20%;
+    border-radius: 15px;
+    box-shadow: inset 0px -20px 20px #d2d2d2;
+}
+.seguindo{
+    background: darkseagreen !important;
+    box-shadow: inset 0px -20px 20px #00ff8ff0 !important;
+}
+
+/* Icones */
+.social{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.linked{
+    background: url(../img/icons/linked.svg);
+}
+.fb{
+    background: url(../img/icons/fb.svg);
+}
+.insta{
+    background: url(../img/icons/ig.svg);
+}
+.whats{
+    background: url(../img/icons/wa.svg);
+}
+
+/* Hover */
+
+.linked:hover{
+    background: url(../img/icons/linked-color.svg);
+}
+.fb:hover{
+    background: url(../img/icons/fb-color.svg);
+}
+.insta:hover{
+    background: url(../img/icons/ig-color.png);
+    background-size: cover;
+}
+.whats:hover{
+    background: url(../img/icons/wa-color.svg);
+}
+
+/* fim dos icones */
+
+.carrossel .carrossel{
+	margin: 0;
+	box-shadow: none;
+}
+.special{
+    color: white;
+    background: #00000038;
+    background-image: linear-gradient(270deg, #0000008f, transparent);
+    background-size: 4px 3px;
+    backdrop-filter: blur(15px) invert(0);
+    box-shadow: 0px 5px 11px 0px rgb(0, 0, 0, 90%), inset 0 0 200px #000000a6;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    margin: 0 20.5%;    
+}
+.special h2{
+	font-size: 30px;
+	text-align: center;
+}
+.special div{
+    width: calc(50% - 20px);
+    margin: 5px;
+}
+input[type="email"]{
+	width: 70%;
+    margin: 20px 0;
+    height: 35px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+	font-family: monospace;
+    font-weight: bold;
+    box-shadow: 
+        0px 5px 5px #00000052
+}
+
+#mandar{
+    border: none;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+#mandar:active{
+    background: #7dffe8;
+	color: white;
+}
+
+
+@media screen and (orientation:portrait){
+    .cima h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .special{
+        margin: 10px 2.5% 5px;
+        border-radius: 15px;
+    }
+    .special div{
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+    .seguir{
+        top: 79%;
+        right: 5px;
+        height: 20%;
+        border-radius: 15px;
+        box-shadow: 
+            inset 0px -20px 20px #00000045,
+            -5px -5px 10px 0 #00000038;
+    }
+    input[type="email"] {
+        width: calc(100% - 30px);
+        margin: 20px 5px 0;
+        height: 25px;
+    }
+    #mandar {
+        border: none;
+        width: 70%;
+        margin: 5px 15%;
+    }
+    .dark .sb {
+        text-shadow: 0px 3px 6px black;
+        background-color: #ffffff57 !important;
+        box-shadow: 0px 5px 11px 0px rgb(0, 0, 0, 90%), inset 0px 0px 80px 40px #00000091 !important;
+        backdrop-filter: blur(6px) !important;
+    }
+    .sb div {
+        width: calc(100% - 20px);
+        margin: 5px 10px;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+
+}

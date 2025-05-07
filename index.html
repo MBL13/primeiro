@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Me Time - Galeria</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/dark.css">
+	<link rel="icon" href="a1.png">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.">
+ 	<script src="script/jquery-2023.js"></script>
+ 	<script src="script/roteiro.js"></script>
+</head>
+<body>
+
+	<header class="cima">
+		<div><a href="index.html"><img class="logo" src="a1.png"></a></div>
+		<h1 onclick="muda()">ASTR0.&REG;</h1>
+		<div class="login"><a href="login.html">Login</a></div>
+	</header>
+
+	<nav class="menu">
+		<div class="icon sim" onclick="aparece()">
+			<a> menu</a>
+		</div>
+		<div class="pesquisa">
+			<label for="pesquisa">pesquisa👓</label>
+			<input type="search" name="pesquisa" id="pesquisa">
+		</div>
+		<ul>
+			<li class="ativo"> <a href="#">Galeria</a> </li>
+			<li> <a href="perfis.html">Perfis</a> </li>
+			<li> <a href="acerca.html">Acerca</a> </li>
+			<hr class="extra">
+			<div class="pesquisa extra">
+				<label for="pesquisa">pesquisa👓</label>
+				<input type="search" name="pesquisa" id="pesquisa">
+			</div>
+			<div id="resultados"></div>
+			<li> <a class="extra" href="login.html">Login</a> </li>
+		</ul>			
+	</nav>
+
+	<main class="meio">
+		<div class="carrossel alto">
+			<div>
+				<h2>Mais vistos</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+				<ul>
+					<li>Artista: <b>Jay Luís</b></li>
+					<li>Ferramenta: <b>Photoshop</b></li>
+					<li>Caracteristica: <b>Semi abstrato</b></li>
+				</ul>
+				
+				<nav class="bts">
+					<button id="anterior">antérior</button>
+					<button id="proximo">próximo</button>
+				</nav>			
+				
+			</div>
+			<div>
+				<img src="img/1_2Jay.jpg">
+			</div>
+		</div>
+
+		<h2 class="imed">Destaques da semana</h2>
+		<hr>
+
+		<div class="carrossel baixo">
+			<div class="elemento">
+				<a href="#">
+					<img src="img/rb.jpg"/>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</a>
+				<details>
+					<summary>Informações</summary>
+					<ul>
+						<li>Artista: <b>Jay Luís</b></li>
+						<li>Ferramenta: <b>Photoshop</b></li>
+						<li>Caracteristica: <b>Semi abstrato</b></li>
+
+					</ul>
+				</details>
+			</div>
+			<div class="elemento novo">
+				<a href="#">
+					<img src="img/lb.gif">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</a>
+				<details>
+					<summary>Informações</summary>
+					<ul>
+						<li>Artista: <b>Jay Luís</b></li>
+						<li>Ferramenta: <b>Photoshop</b></li>
+						<li>Caracteristica: <b>Semi abstrato</b></li>
+
+					</ul>
+				</details>
+			</div>
+			<div class="elemento">
+				<a href="#">
+					<img src="img/jacMusik.jpg">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</a>
+				<details>
+					<summary>Informações</summary>
+					<ul>
+						<li>Artista: <b>Jay Luís</b></li>
+						<li>Ferramenta: <b>Photoshop</b></li>
+						<li>Caracteristica: <b>Semi abstrato</b></li>
+
+					</ul>
+				</details>
+			</div>
+			<div class="elemento">
+				<a href="#">
+					<img src="img/bg.jpg">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</a>
+				<details>
+					<summary>Informações</summary>
+					<ul>
+						<li>Artista: <b>Jay Luís</b></li>
+						<li>Ferramenta: <b>Photoshop</b></li>
+						<li>Caracteristica: <b>Semi abstrato</b></li>
+
+					</ul>
+				</details>
+			</div>
+			<div class="elemento">
+				<a href="#">
+					<img src="img/hoje43.jpg">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</a>
+				<details>
+					<summary>Informações</summary>
+					<ul>
+						<li>Artista: <b>Jay Luís</b></li>
+						<li>Ferramenta: <b>Photoshop</b></li>
+						<li>Caracteristica: <b>Semi abstrato</b></li>
+
+					</ul>
+				</details>
+			</div>
+			<div class="elemento">
+				<a href="#">
+					<img src="img/b.jpg">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</a>
+				<details>
+					<summary>Informações</summary>
+					<ul>
+						<li>Artista: <b>Jay Luís</b></li>
+						<li>Ferramenta: <b>Photoshop</b></li>
+						<li>Caracteristica: <b>Semi abstrato</b></li>
+
+					</ul>
+				</details>
+			</div>
+		</div>
+
+	</main>
+	<footer>
+		<p><b>ASTR0.&REG;</b> - Todos os direitos reservados 2025&copy;</p>
+	</footer>
+
+</body>
+</html>

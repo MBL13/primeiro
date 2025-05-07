@@ -1,0 +1,252 @@
+body{
+    background-size: cover;
+}
+p{
+    color: inherit;
+}
+.cima {
+    margin: 10px 30% 0;
+    border-radius: 45px;
+    background: #0000004d;
+    box-shadow: inset 0px -13px 13px -6px #00000024, inset 0px 13px 13px 0px #ffffffa1;
+}
+.cima h1 {
+    color: #006f4e40;
+    text-shadow: 0px 3px 0px #ffffff;
+    background: linear-gradient(45deg, #5dff76, #ff1100) text;
+}
+.login a{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+hr{
+    border-color: white;
+	width: 60%;
+	margin: 0 20%;
+}
+.principal hr{ border-color:white; }
+.futuro{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-family: monospace;
+}
+fieldset{
+    padding: 48px 0 15px;
+    text-align: center;
+    border: none;
+    color: white !important;
+    text-shadow: 0 3px 3px black;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 70%;
+    position: relative;
+    margin: 20px auto;
+    height: 45px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    outline: none;
+    background: #ffffffdb;
+    box-shadow: 0px -10px 10px -5px #000000, inset 0 5px 10px -5px #000000;
+}
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus{
+    outline: double 3px #ffffff;
+}
+input[placeholder]{
+    font-size: 16px;
+}
+#mandar{
+    border: none;
+    width: 60%;
+    background: #5dff76;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 5px;
+    font-weight: bold;
+}
+#mandar:hover{
+    background: #5dff76b8;
+}
+#mandar:active{
+	background: #8ce48c;
+	color: white;
+}
+.special{
+    background: #00000038;
+    background-image: linear-gradient(270deg, #0000008f, transparent);
+    background-size: 4px 3px;
+    backdrop-filter: blur(15px) invert(0);
+    display: flex;
+    margin: 30px 20% 50px;
+    box-shadow: 0px 5px 11px 0px rgb(0, 0, 0, 90%), inset 0 0 200px #000000a6;
+    border-radius: 15px;
+}
+.special img{
+    width: 300px;
+    margin: 15% 0;
+    mix-blend-mode: hard-light;
+    border-radius: 15px 0 0 15px;
+}
+.special div:first-child p{
+    padding: 25px;
+    color: #ffffffd9;
+    text-shadow: 1px -2px 3px #000000;
+}
+.meio{
+    width: calc(100% - 5%);
+    color: white;
+    /* background: linear-gradient(90deg, transparent, #ffffff94); */
+    background-image: linear-gradient(360deg, transparent, #00000094), url(4.png);
+    background-size: 50px;
+    background-blend-mode: color-dodge;
+    text-align: center;
+    border-radius: 45px 15px 15px 0px;
+    padding: 0 0 25px;
+}
+.meio h2{
+    color: #fffffff0;
+    text-shadow: 0 3px 6px black;
+    line-height: 1;
+    margin-bottom: 0;
+    font-size: xxx-large;
+}
+.meio p{
+    text-align: center;
+}
+.meio a{ 
+    color: #5dff76;
+ }
+.meio a:hover,.carrossel div a:hover{ text-decoration: underline; }
+.dentro{
+    color: white;
+    text-align: center;
+    background: #ff4500;
+    background-image: linear-gradient(360deg, #0000008f, transparent);
+    backdrop-filter: blur(15px) invert(1);
+    box-shadow: 0px 5px 11px 0px rgb(0, 0, 0, 90%), inset 0 0 200px #000000a6;
+	padding: 0 0 25px;
+    border-radius:15px 15px;
+    margin: 0 2.5% 10px;
+}
+.dentro p{
+    text-align: center;
+}
+.carrossel{
+    flex-wrap: nowrap;
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+    margin: auto;
+}
+.carrossel div{
+    color: black;
+    width: calc(100% - 30px);
+    height: 240px;
+    margin: 5px;
+    padding: 10px;
+    background-image: repeating-linear-gradient(45deg, #ffffff30 60%, transparent);
+    text-align: center;
+    border-radius: 25px;
+    filter: invert(1);
+}
+.carrossel div a{
+    color: inherit;
+}
+.carrossel div:hover{
+    background-color: #dfdfdf;
+    filter: none;
+    transition: .5s;
+}
+.carrossel div:hover .icon{
+    margin-top: 29px;
+    scale: 120%;
+}
+
+.security{
+    background: url(../img/icons/finger-print-icon.svg);
+}
+.gen{
+    padding: 0;
+}
+.dark .special {
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(360deg, #ffffff73, transparent);
+    box-shadow: 0px 5px 11px 0px rgb(0, 0, 0, 90%), inset 0 0 200px 40px #000000;
+}
+.dark .meio{
+    mix-blend-mode: luminosity;
+}
+.dark .special img {
+    mix-blend-mode: hard-light;
+}
+.dark .special div:first-child p {
+    color: #ffffff82
+}
+.dark input[type="text"], .dark input[type="email"], .dark input[type="password"] {
+    background: #000000d1;
+    box-shadow: 0px -10px 10px -5px #000000, inset 0 5px 10px 0px #000000;
+}
+dark .dentro {
+    background: #000000ab;
+    background-image: linear-gradient(348deg, #0a48006e, #00488c45);
+}
+.dark .carrossel div {
+    text-shadow: none;
+}
+footer{
+    margin-top: 100px;
+}
+@media screen and (orientation:portrait){
+    .cima{
+        margin: 10px 5% 0;
+    }
+    .special{
+        flex-direction: column ; 
+        height:100%  !important;
+        margin:30px 10% 20%;
+    }
+    .special div:first-child p {
+        padding: 0 25px;
+        font-size: smaller;
+        text-align: center;
+    } 
+    .special img { 
+        width: 30%;
+        margin: 2% 35%; 
+    }
+    .meio{
+        border-radius: 15px;
+        margin: 0 auto;
+        padding: 20px 5px;
+    }
+    .meio h2{
+        font-size: xx-large !important;
+    } 
+    .dentro {
+        margin: 0 10% 10px;
+    }
+    .dentro p{
+        padding: 0 25px;
+        text-align: center;
+    } 
+    .dentro .carrossel{
+        flex-direction: column;
+        margin: 0;
+    }
+    fieldset{
+        padding: 25px 0 25px;
+        margin: 0 0 10px;
+    }
+    footer{
+        position: relative;
+        bottom: -40px;
+    }
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Me Time - Login</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/dark.css">
+	<link rel="icon" href="a1.png">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.">
+ 	<script src="script/roteiro.js"></script>
+</head>
+<body>
+
+	<header class="cima" id="teste">
+		<div><a href="index.html"><img class="logo" src="a1.png"></a></div>
+		<h1 onclick="muda()">Iniciar sessão</h1>
+		<div class="login"><a href="login.html">Login</a></div>
+	</header>
+
+	<nav class="menu">
+		<div class="icon sim" onclick="aparece()">
+			<a>menu</a>
+		</div>
+		<ul>
+			<li><a href="#">Início</a></li>
+			<li><a href="#">noticias</a></li>
+			<li><a href="#">sobre</a></li>
+		</ul>	
+	</nav>
+
+	<div class="special">
+		<div>
+			<img src="img/astr0.png">
+			<p>A quem encontrar esse cartão, deve levar ao designer mais proximo de sí.</p>
+		</div>
+
+		<main class="meio">
+			<fieldset>
+				<form action="admin/admin.html?web=jay" method="post">
+					<input autofocus type="text" name="nome" id="nome" placeholder="Diga o seu nome" pattern=".+Luis" title="Nome do usuario">
+					<br>
+					
+					<input pattern="password" type="password" placeholder="senha" name="senha" title="A sua senha">
+					<br>
+
+					<input id="mandar" type="submit" name="cadastrar" value="Entrar" onclick="usuario()">
+				</form>
+			</fieldset>
+			<p>Ainda não tem conta? <a href="cadastro.html">cadastre-se agora!</a></p>
+			<a href="#" onclick="window.history.back()">Voltar</a>
+			
+		</div>
+	</main>
+	
+	<footer>
+		<p><b>ASTR0.&REG;</b> - Todos os direitos reservados 2025&copy;</p>
+	</footer>
+
+</body>
+</html>
