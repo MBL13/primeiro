@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="css/dark.css">
 	<link rel="icon" href="a1.png">
  	<meta name="viewport" content="width=device-width, initial-scale=1.">
- 	<script src="script/roteiro.js"></script>
-</head>
+ 	<script src="script/jquery-2023.js"></script>
+ 	<script src="script/roteiro.js"></script></head>
 <body>
 
 	<header class="cima" id="teste">
@@ -37,14 +37,14 @@
 
 		<main class="meio">
 			<fieldset>
-				<form action="admin/admin.html?web=jay" method="post">
-					<input autofocus type="text" name="nome" id="nome" placeholder="Diga o seu nome" pattern=".+Luis" title="Nome do usuario">
+				<form onsubmit="login(event)">
+					<input type="text" name="nome" id="nome" placeholder="Diga o seu nome" title="Nome do usuario" autofocus>
 					<br>
 					
-					<input pattern="password" type="password" placeholder="senha" name="senha" title="A sua senha">
+					<input type="password" name="senha" id="senha" placeholder="senha" title="A sua senha">
 					<br>
 
-					<input id="mandar" type="submit" name="cadastrar" value="Entrar" onclick="usuario()">
+					<input id="mandar" type="submit" name="cadastrar" value="Entrar">
 				</form>
 			</fieldset>
 			<p>Ainda não tem conta? <a href="cadastro.html">cadastre-se agora!</a></p>

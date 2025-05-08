@@ -172,6 +172,9 @@
         background: black;
         box-shadow: 0px 2px 4px 1px #000000;
     }
+    .dark .elemento details{
+        background-color: #a4a4a4e6;
+    }
     .dark .menu hr {
         width: 30%;
         margin: 0 auto;

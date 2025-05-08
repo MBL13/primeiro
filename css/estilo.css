@@ -557,7 +557,7 @@ footer p{
 	}
 	.elemento details{
 		display: block;
-		backdrop-filter: blur(20px) saturate(1.9) invert(1);
+ 		background-color: #313131;
 		color: white;
 	}
 	.baixo{

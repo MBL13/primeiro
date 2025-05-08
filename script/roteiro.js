@@ -1,7 +1,7 @@
 function aparece() {
-	x = document.querySelector(".menu ul");
-	y = document.querySelectorAll(".extra");
-	a = document.querySelector(".sim");
+	const x = document.querySelector(".menu ul");
+	const y = document.querySelectorAll(".extra");
+	const a = document.querySelector(".sim");
 
 	a.classList.toggle("nao");
 	x.classList.toggle("mostrar");
@@ -10,19 +10,36 @@ function aparece() {
 		y[i].classList.toggle("mostrar");
 	}
 }
-function usuario(){
-		let x = document.getElementById("teste");
-		let y = document.getElementById("nome");
-		x.style.display = "block";
-		x.innerHTML = 
-			"<h1 class='futuro' title='Obrigado por usar o site "+ y.value +"' onclick='muda()'>"
-			+ y.value +
-			"</h1> <hr/>" +
-		 	"<h2 class='futuro'>Seja bem-vindo</h2>";
-		
-	}
+ function login(event) {
+    event.preventDefault(); 
+
+    const nome = document.querySelector("#nome").value;
+    const senha = document.querySelector("#senha").value;
+    const enviar = document.querySelector("#mandar");
+    const x = document.querySelector("#teste");
+
+    if (nome === "Jay" && senha === "password") {
+      x.style.display = "block";
+      x.innerHTML =
+        "<h1 class='futuro' title='Obrigado por usar o site " + nome + "' onclick='muda()'>" +
+        nome +
+        "</h1> <hr/>" +
+        "<h2 class='futuro'>Seja bem-vindo</h2>";
+
+        setTimeout(() => {
+          window.location.href = "admin/admin.html?admin=Jay";
+        }, 2000);
+    } else {
+      x.style.display = "block";
+      x.innerHTML =
+        "<h1 class='futuro' title='Obrigado por usar o site' onclick='muda()'>" +
+        "Ups!!!" +
+        "</h1> <hr/>" +
+        "<h2 class='futuro'>Senha ou usuário inexistentes...</h2>";
+    }
+  }
 function muda(){
-	document.body.classList.toggle("dark")
+	$("body").toggleClass("dark");
 }
 
 
