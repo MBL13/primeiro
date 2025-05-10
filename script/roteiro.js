@@ -63,5 +63,14 @@ $(document).ready(function(){
 		} 
 
 	});
+
+	$(".gen label").click(function(){
+        for (let i = $(".gen label").length - 1; i >= 0; i--) {
+            $(".gen label i").removeClass("activado")
+        }
+        $(this).children()[0].classList.add("activado");      
+    });
+
+
 });
 

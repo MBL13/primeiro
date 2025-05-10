@@ -61,6 +61,27 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus{
 input[placeholder]{
     font-size: 16px;
 }
+.gen{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.gen label i {
+    background-color: #ffffffdb;
+    border-radius: 100%;
+    box-shadow: 0px -10px 20px -10px black;
+}
+.outro{
+    background: #ffffffdb;
+    border: 5px solid dimgray;
+}
+.activado{
+    background-color: #43ff7ddb !important;
+}
+input[type="radio"]{
+    display: none;
+}
 #mandar{
     border: none;
     width: 60%;
@@ -168,12 +189,8 @@ input[placeholder]{
     margin-top: 29px;
     scale: 120%;
 }
-
 .security{
     background: url(../img/icons/finger-print-icon.svg);
-}
-.gen{
-    padding: 0;
 }
 .dark .special {
     backdrop-filter: blur(10px);
@@ -194,7 +211,7 @@ input[placeholder]{
     background: #000000d1;
     box-shadow: 0px -10px 10px -5px #000000, inset 0 5px 10px 0px #000000;
 }
-dark .dentro {
+.dark .dentro {
     background: #000000ab;
     background-image: linear-gradient(348deg, #0a48006e, #00488c45);
 }
