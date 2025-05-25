@@ -218,9 +218,7 @@ input[type="radio"]{
 .dark .carrossel div {
     text-shadow: none;
 }
-footer{
-    margin-top: 100px;
-}
+
 @media screen and (orientation:portrait){
     .cima{
         margin: 10px 5% 0;
