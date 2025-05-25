@@ -8,7 +8,7 @@ body{
 	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
-	jusitfy-content: space-between;
+	justify-content: space-between;
 	text-align: left;
 	background-blend-mode: hard-light;
     background-image: linear-gradient(#a2e9ff, #ebebeb), url(2.png);
