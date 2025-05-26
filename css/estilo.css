@@ -53,10 +53,10 @@ p{
 	font-family: monospace;
     font-size: 32px;
     cursor: pointer;
-    color: #006f4e40;
+    color: #457e7a40;
     cursor: pointer;
-    text-shadow: 0px 3px 0px #ffffff;
-    background: linear-gradient(45deg, #ffbc00, #00ff00) text;
+    text-shadow: 0px 3px 3px #ffffff;
+    background: linear-gradient(45deg, #0073a0, #00faffe6) text;
 }
 .logo{
     width: 60px;
@@ -70,8 +70,8 @@ p{
 	transform: scale(.9);
 }
 .login a{
-    background: #97ffe3;
-    background-image: linear-gradient(45deg, darkseagreen, transparent);
+    background: #d4fffd;
+    background-image: linear-gradient(45deg, #018487e6, transparent);
     display: inline-block;
     color: #ffffff;
     font-size: 20px;
@@ -81,7 +81,7 @@ p{
     text-shadow: 0px 5px 10px black;
 }
 .login a:hover{
-	background-image: linear-gradient(0deg, darkseagreen, transparent);
+	background-image: linear-gradient(0deg, #018487e6, transparent);
 	transition: .5s;
 }
 .login a:active{
@@ -316,14 +316,14 @@ button{
     border-radius: 0 0 0px 10px;
     padding: 10px;
     border: none;
-    background: #656435;  
+    background: #333333;  
 }
 #proximo{
 	width: 50%;
     border-radius: 0 0 10px 0px;
     padding: 10px;
     border: none;
-    background: #457745;
+    background: #333333;
 }
 #proximo:hover{
 	background: #8ce48c;
