@@ -86,9 +86,8 @@ header{
 }
 .posts {
     min-height: 70vh;
-}
-.posts h3{
-   text-align: center;
+    text-align: center;
+    justify-content: center;
 }
 .dark .posts{
     color: white;
