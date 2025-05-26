@@ -1,6 +1,6 @@
 .dark{
 	background-color: #c9c9c9;
-    background-image: linear-gradient(267deg, #000000f0, transparent), url(2.png);      
+    background-image: linear-gradient(267deg, #000000f0, transparent), url(2.png);     
     background-size: cover;
 }
 @keyframes snow {
