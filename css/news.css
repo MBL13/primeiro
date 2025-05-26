@@ -87,6 +87,7 @@ header{
 .posts {
     min-height: 70vh;
     text-align: center;
+    flex-direction: column;
     justify-content: center;
 }
 .dark .posts{
