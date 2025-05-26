@@ -90,6 +90,9 @@ header{
 .posts h3{
    text-align: center;
 }
+.dark .posts{
+    color: white;
+}
 
 /* Icones */
 .social{
