@@ -84,6 +84,12 @@ header{
     background: darkseagreen !important;
     box-shadow: inset 0px -20px 20px #00ff8ff0 !important;
 }
+.posts {
+    min-height: 70vh;
+}
+.posts h3{
+   text-align: center;
+}
 
 /* Icones */
 .social{
