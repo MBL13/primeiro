@@ -89,8 +89,8 @@ header{
     flex-wrap: nowrap !important;
     
 }
-.usuario .seguindo{
-	position: relative;
+.usuario .seguir{
+	position: relative !important;
 }
 .posts {
     min-height: 70vh;
