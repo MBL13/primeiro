@@ -85,12 +85,10 @@ header{
     box-shadow: inset 0px -20px 20px #00ff8ff0 !important;
 }
 .usuario {
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    
+    flex-direction: row !important;    
 }
 .usuario .seguir{
-	position: relative !important;
+	position: initial !important;
 }
 .posts {
     min-height: 70vh;
