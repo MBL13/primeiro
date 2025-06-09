@@ -30,6 +30,9 @@
     background: linear-gradient(45deg, darkseagreen, #97ffe3) text;
 }
 .dark .login a{
+    padding: 15px;
+    margin: 0 -15px;
+    border-radius: 30px;
     background: #97ffe3;
     background-image: linear-gradient(45deg, darkseagreen, transparent);
 }
@@ -55,10 +58,10 @@
 }
 .dark .pesquisa {
     box-shadow: inset 0px 5px 9px 0px #000000, inset 0 -5px 10px -2px #43434333;
-    background:#00000069;
+    background:#000000ba;
 }
 .dark .pesquisa label{
-    color: #00ffef;
+    color: white;
 }
 .dark .pesquisa input{
     color: white;
@@ -80,7 +83,11 @@
     color: white;
     backdrop-filter: blur(15px);
 }
-
+.dark .alto button {
+    box-shadow: 0 -3px 6px -2px #0000005c, inset 0 -6px 12px -4px #0000006b, inset 0 2px 6px 1px #c3ffe1;
+    background: #ffffff54;
+    background-image: linear-gradient(45deg, #00ff9b87, #00ffe940);
+}
 .dark .imed{
     color: #ffffff;
     text-shadow: 0px 4px 4px #000000;
@@ -108,7 +115,7 @@
 }
 .dark .elemento:hover{
     z-index: 1;
-    background: #00ff7e;
+    background: #00ffaf;
     box-shadow: 
         0px 10px 15px -5px #000000, 
         inset 0px 0px 100px 10px #0000007a;
@@ -125,7 +132,7 @@
     backdrop-filter: none !important;
 }
 .dark details{
-    background: #ffffffa3;
+    background: #00ff9cc4;
     box-shadow: inset 0px -20px 15px 0px #00000096;
     backdrop-filter: blur(10px) saturate(1.9) invert(0);
     color: #000000;
@@ -175,7 +182,7 @@
         box-shadow: 0px 2px 4px 1px #000000;
     }
     .dark .elemento details{
-        background-color: #a4a4a4e6;
+        background-color: #cccccce6;
     }
     .dark .menu hr {
         width: 30%;

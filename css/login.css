@@ -72,6 +72,9 @@ input[placeholder]{
     border-radius: 100%;
     box-shadow: 0px -10px 20px -10px black;
 }
+.dark .gen label i {
+    background-color: #000000d1;
+}
 .outro{
     background: #ffffffdb;
     border: 5px solid dimgray;

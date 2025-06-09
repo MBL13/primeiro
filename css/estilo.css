@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	transition:1s;
+	transition: 1s;
 }
 body{
 	margin: 0;
@@ -33,10 +33,7 @@ p{
 	font-weight: 600;
     color: #2f2f2f;
 }
-.sb{
-	justify-content: space-between;
-	flex-wrap: nowrap;
-}
+
 .cima {
     background: #ffffffd9;
     backdrop-filter: blur(3px);
@@ -49,7 +46,7 @@ p{
     margin: 10px 5% 0;
     height: 70px;
 }
-.cima h1{
+.cima h1, .alto h2{
 	font-family: monospace;
     font-size: 32px;
     cursor: pointer;
@@ -71,17 +68,17 @@ p{
 }
 .login a{
     background: #d4fffd;
-    background-image: linear-gradient(45deg, #018487e6, transparent);
+    background-image: linear-gradient(45deg, #00b7bbe6, transparent);
     display: inline-block;
     color: #ffffff;
     font-size: 20px;
-    border-radius: 30px;
-    padding: 15px;
-    margin: 5px 0;
+    border-radius: 5px 35px 5px 35px;
+    padding: 20px 20px;
+    margin: 0 -22px;
     text-shadow: 0px 5px 10px black;
 }
 .login a:hover{
-	background-image: linear-gradient(0deg, #018487e6, transparent);
+	background-image: linear-gradient(0deg, #00b7bbe6, transparent);
 	transition: .5s;
 }
 .login a:active{
@@ -97,8 +94,8 @@ p{
 	display: flex;
 	justify-content: flex-end;
     backdrop-filter: blur(30px) saturate(1.5);
-    background: #0000004d;
-    box-shadow: inset 0px -13px 13px -6px #00000024, inset 0px 13px 13px 0px #ffffffa1;
+    background: #c1c1c14d;
+    box-shadow: inset 0px -13px 13px -6px #0000000d, inset 0px 13px 13px 0px #ffffff80;
     background-size: 2px 5px;
     border-radius: 0 0 41px 41px;
     padding: 5px 25px;
@@ -173,7 +170,7 @@ p{
 	font-size: 20px;
 	padding: 10px;
 	color: white;
-    text-shadow: 0px 5px 10px black;
+    text-shadow: 0px 5px 12px #000000a1;
 }
 .menu a:hover{
 	transform: scale(1.1);
@@ -255,19 +252,21 @@ hr{
     border: solid #000000 1px;
 }
 .carrossel{
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 0 200px 40px #ffffffb8;
-    background: #ffffff94;
-    backdrop-filter: blur(6px);	
-    /*background-image: url(4.png);
-    background-size: 400px;
-    background-blend-mode: difference;*/
-	display: flex;
-	flex-wrap: wrap;
-	border-radius: 15px;
-	max-width: 1261.560px;
-	margin: 0 2.5%;
-	padding: 10px;
-	transition: 1s;
+	box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.15), inset 0 0 200px 40px #ffffffb8;
+    background: #eafbffe6;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 0 2.5%;
+    padding: 10px;
+    transition: 1s;
+}
+.sb{
+	justify-content: space-between;
 }
 .alto div{
 	width: calc(50% - 30px);
@@ -298,38 +297,31 @@ button{
 
 }
 .alto button{
-    box-shadow: 0 3px 6px #00000085;
+	box-shadow: 0 -3px 6px -2px #0000005c, inset 0 -6px 12px -4px #0000006b, inset 0 2px 6px 1px #c3fffd;
     margin: 5px;
+	width: 50%;
+    padding: 10px;
     border-radius: 90px !important;
+    border: none;
+    background: #33333354;
+    text-shadow: 0px 3px 3px #00000091;
+    background-image: linear-gradient(45deg, #0073a087, #00faff40);
 }
 .alto button:hover{
+	background: #50f2f3 !important;
     text-shadow: 0px 5px 20px black;
     color: black;
 }
 .alto button:active{
-	color: white;
 	text-shadow: 0px 5px 10px black !important;
-    box-shadow: inset 0px 5px 10px -5px #00000078;
+    box-shadow: inset 0px 5px 10px -5px #00000078 !important;
 }
-#anterior{
-	width: 50%;
-    border-radius: 0 0 0px 10px;
-    padding: 10px;
-    border: none;
-    background: #333333;  
-}
-#proximo{
-	width: 50%;
-    border-radius: 0 0 10px 0px;
-    padding: 10px;
-    border: none;
-    background: #333333;
-}
-#proximo:hover{
-	background: #8ce48c;
-}
-#anterior:hover{
-	background: #aab370;
+.alto h2{
+	margin: 0px 0 -10px;
+	color: #00000069;    
+	font-size: 24px;
+	cursor: default;
+	font-family: 'Arial', sans-serif;
 }
 .baixo{
 	gap: 10px;
@@ -361,7 +353,7 @@ button{
 	position: relative;
 	border-radius: 15px;
 	transition: .2s;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .elemento:hover{
     box-shadow: 0px 10px 15px -10px #000000,0 4px 6px rgba(0, 0, 0, 0.1);
@@ -378,7 +370,6 @@ button{
 .elemento img{
     width: 30%;
     margin: 10px 10px 0;
-    max-height: 306.031px;
     border-radius: 10px;
 }
 .elemento:hover img{
@@ -386,22 +377,23 @@ button{
 	border-radius: 15px;
     border: 5.5px solid white;
 	width: 100%;
-	max-height: 250px;
+	height: 255px;
 	margin: 0;
 	position: absolute;
 	transition: .2s;
 }
 .elemento details{
-	display: none;
+    display: none;
     position: absolute;
     bottom: 0;
-    background: #ffffff63;
-    box-shadow: inset 0px 10px 20px 10px #0000006e;
+    background: #00000063;
+    box-shadow: inset 0px 10px 20px 10px #34a4ba6e;
     backdrop-filter: blur(20px) saturate(1.9);
     width: calc(100% - 2%);
     margin: 0 1% 5px;
     border-radius: 10px;
     overflow-y: auto;
+    color: white;
 } 
 .elemento details summary{
 	text-align: center;
@@ -526,7 +518,6 @@ footer p{
 		max-height: initial;
         margin: 10px 0;
         padding: 0 0 25px;
-        overflow-y: visible;
 	}
 	.elemento::after{
 		content: "";
@@ -541,7 +532,9 @@ footer p{
     	box-shadow: none;
 	}
 	.elemento img {
-    	width: 100%;
+		height: initial !important;
+		max-height: 250px !important;
+    	width: 100% !important;
 		margin: 0;
 		object-fit: cover;
 	}
@@ -551,7 +544,6 @@ footer p{
 		transition: .2s;
 		border: none;
 		border-radius: 10px;
-	    max-height: 306.031px;
 	    filter: opacity(85%);
 	}
 	.elemento:hover p{
@@ -560,6 +552,7 @@ footer p{
 	.elemento details{
 		display: block;
  		background-color: #313131;
+ 		box-shadow: inset 0px 10px 20px 10px #0000006e;
 		color: white;
 	}
 	.baixo{
@@ -582,7 +575,7 @@ footer p{
 
 ::-webkit-scrollbar-thumb:hover {
 	transform: scale(1.5);
-	background-color: #84ffd8cf;
+	background-color: #ffffffcf;
 	border-radius: 5px;
 }
 

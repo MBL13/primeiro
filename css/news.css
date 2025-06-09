@@ -80,6 +80,9 @@ header{
     border-radius: 15px;
     box-shadow: inset 0px -20px 20px #d2d2d2;
 }
+.dark .elemento *{
+    transition: 0s;
+}
 .seguindo{
     background: darkseagreen !important;
     box-shadow: inset 0px -20px 20px #00ff8ff0 !important;
@@ -221,6 +224,13 @@ input[type="email"]{
         border: none;
         width: 70%;
         margin: 5px 15%;
+    }    
+    .usuario div {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+    .usuario .seguir {
+        margin: 10px 0;
     }
     .dark .sb {
         text-shadow: 0px 3px 6px black;
