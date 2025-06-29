@@ -39,14 +39,20 @@
 		<div class="meio">
 			<fieldset>
 				<form action="index.html?novo-usuario" method="get">
-					<input type="email" placeholder="email" name="senha" pattern=".+@gmail.com" title="Fornece um email valido" required autofocus>
-					<br>
+					<div class="entrada">
+						<input id="email" type="email" name="email" pattern=".+@gmail.com" title="Fornece um email valido" required autofocus>
+						<label for="email">email</label>
+					</div>
+					<div class="entrada">
+						<input id="nome" type="text" name="nome" id="nome" title="Diga como quer ser chamado" required>
+						<label for="nome">Diga o seu nome</label>
+					</div>
+					
 
-					<input type="text" name="nome" id="nome" placeholder="Diga o seu nome" title="Diga como quer ser chamado" required>
-					<br>
-
-					<input type="password" placeholder="senha" name="senha" title="defina senha para o seu cadastro" required>
-					<br>
+					<div class="entrada">
+						<input id="senha" type="password" name="senha" title="defina senha para o seu cadastro" required>
+						<label for="senha">senha</label>
+					</div>
 					<fieldset class="gen">
 						<label for="M"><i class="icon man">Masculino</i></label>
 						<input name="gender" type="radio" id="M" value="M">

@@ -32,5 +32,5 @@ Acesse a galeria através do link: [mbl13.github.io/primeiro](https://mbl13.gith
 
 Para feedbacks ou colaborações, entre em contato:
 
-- **Email:** madirluis@gmail.com
-- **LinkedIn:** https://www.linkedin.com/in/madir-lu%C3%ADs-559701284/
+- **Email:** [madirluis@gmail.com](mailto:madirluis@gmail.com)
+- **LinkedIn:** [www.linkedin.com/in/madir-luís-559701284](https://www.linkedin.com/in/madir-lu%C3%ADs-559701284/)

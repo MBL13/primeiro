@@ -39,13 +39,14 @@
 			<fieldset>
 
 				<form onsubmit="login(event)">
-					<input type="text" name="nome" id="nome" placeholder="Diga o seu nome" title="Nome do usuario" autofocus>
-
-					<br>
-					
-					<input type="password" name="senha" id="senha" placeholder="senha" title="A sua senha">
-					<br>
-
+					<div class="entrada">
+						<input type="text" name="nome" id="nome" title="Nome do usuario" required autofocus>
+						<label for="nome">Diga o seu nome</label>
+					</div>
+					<div class="entrada">
+						<input type="password" name="senha" id="senha" title="A sua senha" required>
+						<label for="senha">senha</label>
+					</div>
 					<input id="mandar" type="submit" name="cadastrar" value="Entrar">
 				</form>
 			</fieldset>
